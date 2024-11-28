@@ -7,7 +7,17 @@ In JavaScript development, creating an integrated approach is an effective strat
 # 使用（Use）
 
 * BorComEvent
+  ```javascript
+  import { BroComEvent } from "hyao-js-hooks";
+
+  BroComEvent.$emit("Event", "string" || "Object" || "Array" || "Fun");
+  BroComEvent.$on("Event", () => {});
+  BroComEvent.$off("Event");
+  ```
 * HtmlEscape
+  ```javascript
+  import { HtmlEscape, HtmlUnEscape } from "hyao-js-hooks";
 
-
-
+  HtmlEscape("<div>你好 Hyao</div>");
+  HtmlUnEscape("叽里呱啦-要还原的字符");
+  ```

@@ -10,6 +10,6 @@ const HtmlEscape = require(__dirname + "/src/HtmlEscape");
  * Exposed
  */
 module.exports = {
-    ...BroComEvent,
-    ...HtmlEscape,
+  BroComEvent,
+  ...HtmlEscape,
 };
