@@ -10,7 +10,7 @@ In JavaScript development, creating an integrated approach is an effective strat
   ```javascript
   import { BroComEvent } from "hyao-js-hooks";
 
-  BroComEvent.$emit("Event", "string" || "Object" || "Array" || "Fun");
+  BroComEvent.$emit("Event", "String" || "Object" || "Array" || "Fun");
   BroComEvent.$on("Event", () => {});
   BroComEvent.$off("Event");
   ```
@@ -20,4 +20,12 @@ In JavaScript development, creating an integrated approach is an effective strat
 
   HtmlEscape("<div>你好 Hyao</div>");
   HtmlUnEscape("叽里呱啦-要还原的字符");
+  ```
+* LocalStorage
+  ```javascript
+  import { GetLocalStorage, SetLocalStorage, DelLocalStorage } from "hyao-js-hooks";
+
+  GetLocalStorage("键");
+  SetLocalStorage("键", value);
+  DelLocalStorage("键");
   ```
