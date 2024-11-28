@@ -1,0 +1,21 @@
+{
+    "name": "hyao-js-hooks",
+    "version": "1.0.0",
+    "description": "Hyao-Js-Hooks",
+    "private": "true",
+    "main": "index.js",
+    "keywords": [
+      "hyao",
+      "hooks",
+      "jshooks",
+      "hyaojshooks"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:Hyao-J/hyao-js-hooks.git"
+    },
+    "bugs": {
+      "url": "https://github.com/Hyao-J/hyao-js-hooks/issues"
+    },
+    "license": "ISC"
+}
