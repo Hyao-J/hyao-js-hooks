@@ -1,6 +1,6 @@
 {
   "name": "hyao-js-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hyao-Js-Hooks",
   "main": "index.js",
   "keywords": [
@@ -18,7 +18,7 @@
     "url": "https://github.com/Hyao-J/hyao-js-hooks/issues"
   },
   "scripts": {
-    "dev": "node index.js"
+    "test": "testem"
   },
   "license": "ISC"
 }
