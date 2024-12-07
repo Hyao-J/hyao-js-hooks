@@ -39,12 +39,12 @@ In JavaScript development, creating an integrated approach is an effective strat
   DelCookie("键");
   CleanCookie();  // 清楚该网站下所有cookie
   ```
-* DeboThru（防抖节流）
+* DeboThro（防抖节流）
 
   ```js
   import { Debounce, Throttle } from "hyao-js-hooks";
 
-  Debounce(fn, time, immediate); // immediate是否需要防抖 --- 默认需要 false
+  Debounce(fn, time, immediate = false); // immediate是否需要防抖 --- 默认需要 false
   Throttle(fn, time); // time --- 间隔时间
   ```
 * UniqueBy（数组去重）
@@ -52,6 +52,6 @@ In JavaScript development, creating an integrated approach is an effective strat
   ```js
   import { UniqueBy } from "hyao-js-hooks";
 
-  UniqueBy(Array, fn); // fn可根据条件性去重 
+  UniqueBy(Array, fn); // Array --- 可为Obj、Str、Arr、Num   fn可根据条件性去重 
   eg: UniqueBy(Array, item => item.id);
   ```
