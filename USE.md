@@ -6,7 +6,7 @@ In JavaScript development, creating an integrated approach is an effective strat
 
 # 使用（Use）
 
-* BorComEvent
+* BorComEvent（事件总线）
 
   ```javascript
   import { BroComEvent } from "hyao-js-hooks";
@@ -15,7 +15,7 @@ In JavaScript development, creating an integrated approach is an effective strat
   BroComEvent.$on("Event", () => {});
   BroComEvent.$off("Event");
   ```
-* HtmlEscape
+* HtmlEscape（html转义）
 
   ```javascript
   import { HtmlEscape, HtmlUnEscape } from "hyao-js-hooks";
@@ -23,14 +23,28 @@ In JavaScript development, creating an integrated approach is an effective strat
   HtmlEscape("<div>你好 Hyao</div>");
   HtmlUnEscape("叽里呱啦-要还原的字符");
   ```
-* LocalStorage
+* LocalStorage（本地存储）
 
   ```javascript
-  import { GetLocalStorage, SetLocalStorage, DelLocalStorage, ... } from "hyao-js-hooks";
+  import { GetLocalStorage, SetLocalStorage, DelLocalStorage, GetSessionStorage, SetSessionStorage, DelSessionStorage, GetCookie, SetCookie, DelCookie, CleanCookie } from "hyao-js-hooks";
 
   GetLocalStorage("键");
   SetLocalStorage("键", value);
   DelLocalStorage("键");
+  GetSessionStorage("键");
+  SetSessionStorage("键", value);
+  DelSessionStorage("键");
+  GetCookie("键");
+  SetCookie("键", value, time = 30); // 有效时间默认30天
+  DelCookie("键");
+  CleanCookie();  // 清楚该网站下所有cookie
   ```
+* UniqueBy（数组去重）
 
-> 更多：https://github.com/Hyao-J/hyao-js-hooks/blob/main/USE.md
+  ```js
+  import { UniqueBy } from "hyao-js-hooks";
+
+
+  UniqueBy(Array, fn); // fn可根据条件性去重 
+  eg: UniqueBy(Array, item => item.id);
+  ```
